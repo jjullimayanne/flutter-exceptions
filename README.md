@@ -1,5 +1,9 @@
 # flutter-exceptions
 
+### first of all
+#### What is a exception
+An exception is an event, which occurs during the execution of a program, that disrupts the normal flow of the program's instructions.
+
 ### Async funciton that returns a User inside a try and catch bloc, when we had a status code equal to 200 which means its okay about our request we return a User model. Otherwise 
 
 ~~~dart
