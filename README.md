@@ -43,6 +43,42 @@ Imagine that we will wrap all of our functions in `try catch` blocs for all our 
 
 A efficiente solution is use [DartZ](https://pub.dev/packages/dartz/install)
 
+We will use a `Either` to handle errors (instead of Exceptions).
+
+
+
+~~~dart
+Either<L, R>: L 
+~~~
+
+is the type of the error (for example a String explaining the problem), R is the return type when the computation is successful
+
+
+~~~dart
+class ErrorController {
+  Future<Either<String, User>> getRequest() async {
+    try {
+      final response = await http.get(
+        Uri.parse('https://jsonplaceholder.typicode.com/users'),
+      );
+      if (response.statusCode == 200) {
+        return right(
+          User.fromJson(response.body as Map<String, dynamic>),
+        );
+      }
+      throw 'Some unexpected error occurred';
+    } catch (e) {
+      return left(
+        e.toString(),
+      );
+    }
+  }
+}
+~~~
+
+our `Either` can return a `User` or a `String` if in case a sucess we will return a `rigth`with our sucess case, and if in case or faild we will use a `lef` with our error mensage.
+
+
 
 
 #### util links:
