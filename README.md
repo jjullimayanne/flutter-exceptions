@@ -1,4 +1,4 @@
-# flutter-exceptions
+# Flutter exceptions: 
 
 ### First of all
 #### What is an exception
