@@ -51,6 +51,7 @@ A efficiente solution is use [DartZ](https://pub.dev/packages/dartz/install)
 
 [Advanced exceptions](https://www.youtube.com/watch?v=8AQC3hXmZ_w)
 
+
 [Either](https://github.com/SandroMaglione/fpdart#comparison-with-dartz)
 
 
