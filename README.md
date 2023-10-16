@@ -6,7 +6,7 @@ An exception is an event, which occurs during the execution of a program, that d
 
 ## The usual mode:
 
-### Async function that returns a User inside a try and catch bloc, when we had a status code equal to 200 which means its okay about our request we return a User model. Otherwise 
+### Async function that returns a User inside a try and catch bloc, when we had a status code equal to 200 which means it is okay about our request we return a User model. Otherwise 
 
 ~~~dart
 class ErrorController {
@@ -37,7 +37,23 @@ The reason for that is the rethrow from that getRequest is called whatever this 
 
 ### So why not to do that: 
 
-Imagine that we will wrap all of our functions in `try catch` blocs for all our code, it`s easy to forget that rule and unnecessary because the exception handle itself. All our problem is in the function signature that does not specify whether we need to handle the error.
+Imagine that we will wrap all of our functions in `try catch` blocs for all our code, it`s easy to forget that rule and unnecessary because the exception handles itself. All our problem is in the function signature that does not specify whether we need to handle the error.
+
+### How solve that:
+
+A efficiente solution is use DartZ
+
+
+
+#### util links:
+
+[Functional error handling](https://resocoder.com/2019/12/14/functional-error-handling-in-flutter-dart-2-either-task-fp/)
+[Advanced exceptions](https://www.youtube.com/watch?v=8AQC3hXmZ_w)
+
+
+
+
+
 
 
 
