@@ -41,7 +41,7 @@ Imagine that we will wrap all of our functions in `try catch` blocs for all our 
 
 ### How solve that:
 
-A efficiente solution is use DartZ
+A efficiente solution is use [DartZ](https://pub.dev/packages/dartz/install)
 
 
 
