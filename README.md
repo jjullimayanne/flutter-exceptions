@@ -19,3 +19,8 @@ class ErrorController {
   }
 }
 ~~~
+
+When we call this class inside the view we can see an exception, why do we get this?
+
+The reason for that is the rethrow from that getRequest is called whatever this function is called so to solve that we need wrap that called in a try catch bloc 
+
